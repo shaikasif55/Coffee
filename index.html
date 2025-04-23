@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <style>
+    .swiper {
+      width: 100%;
+      padding: 2rem 0;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+   
+    
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-auto md:w-full bg-red-950 z-50 h-14 flex items-center justify-between px-4 md:px-10">
+      <h1 class="text-white text-lg md:text-2xl font-bold hidden md:block ">☕ Coffee</h1>
+    
+    <nav id="navMenu" class="hidden md:flex space-x-4">
+      <a href="#home" class="text-white hover:bg-amber-600 px-3 py-1 rounded-full">Home</a>
+      <a href="#about" class="text-white hover:bg-amber-600 px-3 py-1 rounded-full">About</a>
+      <a href="#menu" class="text-white hover:bg-amber-600 px-3 py-1 rounded-full">Menu</a>
+      <a href="#testimonials" class="text-white hover:bg-amber-600 px-3 py-1 rounded-full">Testimonials</a>
+      <a href="#gallery" class="text-white hover:bg-amber-600 px-3 py-1 rounded-full">Gallery</a>
+      <a href="#contact" class="text-white hover:bg-amber-600 px-3 py-1 rounded-full">Contact</a>
+    </nav>
+    <button class="md:hidden text-white text-2xl" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="pt-24 bg-red-950 text-white text-center md:text-left px-4 md:px-10" style="height: 680px;">
+    <div class="bg-red-950 w-full pb-5 md:hidden ">
+      <h1 class="text-white text-lg md:text-2xl font-bold ">☕ Coffee</h1>
+    </div>
+    <div class="flex flex-col md:flex-row items-center  md:pl-10">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-amber-400 text-3xl md:text-4xl font-serif">Best Coffee</h2>
+        <p class="text-xl font-bold">Make your day great with our special coffee!</p>
+        <p>Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
+        <div class="flex justify-center md:justify-start space-x-4 mt-6">
+          <a href="#" class="bg-amber-600 border-2 border-slate-600 rounded-full px-6 py-2 hover:bg-transparent transition">Order Now</a>
+          <a href="#" class="border-2 border-slate-600 rounded-full px-6 py-2 hover:bg-amber-600 transition">Contact Us</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <img src="erasebg-transformed.png" alt="Coffee logo" class="w-full  " />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="pt-28 bg-amber-50 px-4 md:px-10" style="height: 625px;">
+    <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-10 md:pt-28 md:pl-20">
+      <img src="about us imge.jpg" alt="About Us" class="rounded-lg w-[350px]" />
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-bold">ABOUT US</h2>
+        <div class="w-20 h-1 bg-amber-500 rounded-full mt-2 mb-4 mx-auto md:mx-0"></div>
+        <p class="text-gray-700">At Coffee House in Vijayawada, Andhra Pradesh, we pride ourselves on being a go-to destination for coffee lovers and conversation alike. We provide an exceptional coffee experience in a cozy and inviting atmosphere.</p>
+        <div class="flex justify-center md:justify-start mt-4 space-x-4">
+          <img src="instagram.jpeg" alt="Instagram" class="w-6 h-6" />
+          <img src="facebook.jpeg" alt="Facebook" class="w-6 h-6" />
+          <img src="X.jpeg" alt="X" class="w-6 h-6" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="mt-20 pt-28 bg-gray- w-full bg-slate-950 shadow-xl text-white">
+    
+    <div class="w-full flex flex-col justify-center items-center p-4 ml-10">
+        <h1 class="font-bold text-3xl text-center md:text-left">OUR MENUE</h1>
+        <div class="h-1 w-20 bg-amber-500 rounded-full mt-3"></div>
+<div class="grid grid-cols-1 gap-2 grid-flow-row-dense md:grid-cols-3 sm:grid-cols-2 p-10">
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col" style="width: 400px; height: 300px;" src="coffee.png" alt="menue">
+        <h1 class="text-2xl text-center font-bold">Hot Beverages</h1>
+        <p class="text-center mt-4 max-w-md">Wide rang of steaming hot coffe to make you fresh and light.</p>
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col" style="width: 400px; height: 300px;" src="hot chocolete.png" alt="menue">
+        <h1 class="text-2xl text-center font-bold">Cold Beverages</h1>
+        <p class="text-center  mt-4 max-w-md">Creamy and frothy cold coffe to make you cool.</p>
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col" style="width: 400px; height: 300px;" src="drink.png" alt="menue">
+        <h1 class="text-2xl text-center font-bold">Hot Beverages</h1>
+        <p class="text-center mt-4 max-w-md">Wide rang of steaming hot coffe to make you fresh and light.</p>
+    </div>
+     <div class="flex flex-col">
+        <img class="mr-20 flex flex-col" style="width: 400px; height: 300px;" src="combo big.png" alt="menue">
+        <h1 class="text-2xl text-center font-bold">Special Combos</h1>
+        <p class="text-center mt-4 max-w-md">Your favarite eating and drinking combinations.</p>
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col" style="width: 400px; height: 300px;" src="ice cream icc.png" alt="menue">
+        <h1 class="text-2xl text-center font-bold">Dessert</h1>
+        <p class="text-center mt-4 max-w-md">Satiate your plate and take you on a culinary treat.</p>
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col" style="width: 400px; height: 300px;" src="food b.png" alt="menue">
+        <h1 class="text-2xl text-center font-bold">Burger & FrenchS</h1>
+        <p class="text-center mt-4 max-w-md">Quick bites to satisfy your small size hunger.</p>
+    </div>
+    
+   
+                            
+</div>
+
+
+</section>
+<section id="terminals" class="mt-20 pt-28 bg-white" >
+   
+    <div class="w-full flex flex-col justify-center items-center p-4 ml-10">
+        <h1 class="font-bold text-3xl text-center md:text-left">TESTIMONIALS</h1>
+        <div class="h-1 w-20 bg-amber-500 rounded-full mt-3"></div>
+<!-- Slider main container -->
+<div class="swiper md:w-full" >
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+  
+      <!-- Slides -->
+      <div class="swiper-slide flex flex-col md:flex-row  items-center justify-center ">
+        <img src="asif pic.jpeg" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Asif</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Grate espresso blend! Smooth and bold flavor.Fast shipping too!"</p>
+        </div>
+
+      </div>
+  
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="pick w 1.jfif" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Nafeesa</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Loves the French roast. Perfectly balanced and rich.Will order again!"</p>
+        </div>
+      </div>
+  
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="altaf pic.jpeg" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Altaf</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Fantastic mocha flavor.Fresh and aromatic.Quick shipping!"</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="pic w 2.jfif" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Mounika</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Excellent quality!Fresh beans and quick delivery.Highly recommended."</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="gouse pic.jpeg" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Gouse</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Best decaf i've tride! Smooth and flavorful.Arrived promptly "</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- Scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+</section>
+</section>
+<section id="gallery" class="pt-28 bg-gray- w-full bg-white text-white mt-10">
+   
+    <div class="w-full flex flex-col justify-center items-center p-4 ml-10">
+        <h1 class="font-bold text-3xl text-center text-black">Gallery</h1>
+        <div class="h-1 w-20 bg-amber-500 rounded-full mt-3"></div>
+<div class="grid grid-cols-1 gap-2 grid-flow-row-dense md:grid-cols-3 sm:grid-cols-2 p-10">
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col rounded-lg" style="width: 350px; height: 300px;" src="gall 1.jfif" alt="menue">
+        
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col rounded-lg" style="width: 350px; height: 300px;" src="gall 2.avif" alt="menue">
+        
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col rounded-lg" style="width: 350px; height: 300px;" src="gall 3.avif" alt="menue">
+       
+    </div>
+     <div class="flex flex-col">
+        <img class="mr-20 flex flex-col rounded-lg" style="width: 350px; height: 300px;" src="gall 4.avif" alt="menue">
+       
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col rounded-lg" style="width: 350px; height: 300px;" src="gall 5.avif" alt="menue">
+       
+    </div>
+    <div class="flex flex-col">
+        <img class="mr-20 flex flex-col rounded-lg" style="width: 350px; height: 300px;" src="gall 6.avif" alt="menue">
+        
+    </div>                   
+</div>
+
+
+</section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="mt-20 pt-28 bg-white" style="height: 625px;">
+    
+   
+    <div class="w-full flex flex-col justify-center items-center p-4 ml-10">
+        <h1 class="font-bold text-3xl text-center md:text-left">TESTIMONIALS</h1>
+        <div class="h-1 w-20 bg-amber-500 rounded-full mt-3"></div>
+<!-- Slider main container -->
+<div class="swiper md:w-full" >
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+  
+      <!-- Slides -->
+      <div class="swiper-slide flex flex-col md:flex-row  items-center justify-center ">
+        <img src="asif pic.jpeg" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Asif</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Grate espresso blend! Smooth and bold flavor.Fast shipping too!"</p>
+        </div>
+
+      </div>
+  
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="pick w 1.jfif" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Nafeesa</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Loves the French roast. Perfectly balanced and rich.Will order again!"</p>
+        </div>
+      </div>
+  
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="altaf pic.jpeg" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Altaf</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Fantastic mocha flavor.Fresh and aromatic.Quick shipping!"</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="pic w 2.jfif" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Mounika</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Excellent quality!Fresh beans and quick delivery.Highly recommended."</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
+        <img src="gouse pic.jpeg" alt="About Us" class="w-40 h-40 rounded-full ">
+        <div class="ml-20 flex flex-col"> 
+            <h1 class="font-bold text-xl md:text-3xl">Shaik Gouse</h1>
+            <p class="text-center mt-4 max-w-md md:font-semibold md:text-2xl">"Best decaf i've tride! Smooth and flavorful.Arrived promptly "</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- Scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+</section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="pt-28 bg-white px-4 md:px-10">
+    <h2 class="text-3xl font-bold text-center text-black">Gallery</h2>
+    <div class="w-20 h-1 bg-amber-500 rounded-full mx-auto my-4"></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="gall 1.jfif" class="rounded-lg"  style="width: 350px; height: 300px;" alt="Gallery Image" />
+      <img src="gall 2.avif" class="rounded-lg"  style="width: 350px; height: 300px;" alt="Gallery Image" />
+      <img src="gall 3.avif" class="rounded-lg"  style="width: 350px; height: 300px;" alt="Gallery Image" />
+      <img src="gall 4.avif" class="rounded-lg"  style="width: 350px; height: 300px;" alt="Gallery Image" />
+      <img src="gall 5.avif" class="rounded-lg"  style="width: 350px; height: 300px;" alt="Gallery Image" />
+      <img src="gall 6.avif" class="rounded-lg"  style="width: 350px; height: 300px;" alt="Gallery Image" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="pt-28 bg-white px-4 md:px-10">
+    <h2 class="text-3xl font-bold text-center text-black">Contact</h2>
+    <div class="w-20 h-1 bg-amber-500 rounded-full mx-auto my-4"></div>
+    <div class="flex flex-col md:flex-row justify-between gap-10">
+      <div class="text-black space-y-2">
+        <p>📍 123 Composite Avenue, Vijayawada, Andhra Pradesh</p>
+        <p>📧 info@coffeeshopwebsite.com</p>
+        <p>📞 7075685387</p>
+        <p>🕐 Mon–Fri: 9:00 AM – 5:00 PM</p>
+        <p>🕐 Sat: 10:00 AM – 3:00 PM</p>
+        <p>🕐 Sun: Closed</p>
+      </div>
+      <form class="bg-rose-50 p-6 rounded-lg w-full md:w-1/2 space-y-4">
+        <input type="text" placeholder="Your name" class="w-full border p-3 rounded" required />
+        <input type="email" placeholder="Your email" class="w-full border p-3 rounded" required />
+        <textarea placeholder="Your message" class="w-full border p-3 rounded resize-none" rows="4" required></textarea>
+        <button type="submit" class="bg-rose-500 hover:bg-rose-700 text-white px-6 py-3 rounded-full">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-4 mt-10">
+    © 2024 Coffee Shop. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      speed: 500,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    function toggleMenu() {
+      const menu = document.getElementById("navMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>

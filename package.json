@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.7",
+    "tailwindcss": "^4.0.7"
+  },
+  "scripts": {
+    "dev": "vite",        // Start Vite development server
+    "build": "vite build", // Build the project for production
+    "serve": "vite preview" // Preview the production build
+  }
+}
